@@ -14,12 +14,8 @@ module Example.Storage where
 
 import Control.Lens                 ((&), (.~), (<&>), (?~))
 import Control.Monad.Trans.Resource (liftResourceT, runResourceT)
-
 import Data.Conduit (runConduit, (.|))
-import Data.Text    (Text)
-
 import System.IO (stdout)
-
 import qualified Data.Conduit.Binary    as Conduit
 import qualified Data.Text              as Text
 import qualified Network.Google         as Google

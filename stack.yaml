@@ -1,1 +1,21 @@
-stack-8.6.4.yaml
+resolver: lts-18.1
+
+local-bin-path: bin
+
+nix:
+  path: ["nixpkgs=https://github.com/NixOS/nixpkgs/tarball/860b56be91fb874d48e23a950815969a7b832fbc"]
+  pure: false
+  packages: [zlib, icu, unzip]
+  add-gc-roots: true
+
+extra-deps: []
+
+packages:
+  - core
+  - gogol
+  - examples
+# GENERATED
+  - gogol-storage
+  - gogol-storage-transfer
+  - gogol-sheets
+# END GENERATED
